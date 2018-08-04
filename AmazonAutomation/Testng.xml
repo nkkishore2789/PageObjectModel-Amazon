@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Reader+ WebPortal Suite" configfailurepolicy="skip">
+
+<test name="Reader+ WebReader Test Cases" configfailurepolicy="skip">
+		<classes>
+			<class name="com.Amazon.Testcases.SearchBookTest" />
+			</classes>
+	</test>
+</suite>
