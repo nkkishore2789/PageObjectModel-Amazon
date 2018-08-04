@@ -11,6 +11,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.firefox.internal.ProfilesIni;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
@@ -86,11 +88,25 @@ public class WebBase {
 	public  void setupFirefoxDriver(){
 		String FirefoxDriver = BrowserType;
 		System.setProperty(FirefoxDriver, ReadTestDataproperty.TEST_ROOT_DIR+Firefoxdriverpath);
-		driver=new ChromeDriver();
+		
+		ProfilesIni profile=new ProfilesIni();
+		FirefoxProfile firefoxProfile = profile.getProfile("Kishore");
+		
+		firefoxProfile.setAcceptUntrustedCertificates(true);
+		firefoxProfile.setAssumeUntrustedCertificateIssuer(true);
+		firefoxProfile.setPreference("browser.helperApps.alwaysAsk.force", false);
+	    firefoxProfile.setPreference("browser.download.manager.closeWhenDone", true);
+	    firefoxProfile.setAcceptUntrustedCertificates(true);
+	    firefoxProfile.setAssumeUntrustedCertificateIssuer(true);
+		
+		
+		
+		driver=new FirefoxDriver();
 	}
 	
 	public  void setupIEDriver(){
 		String IEDriver = BrowserType;
+		
 		System.setProperty(IEDriver, System.getProperty(ReadTestDataproperty.TEST_ROOT_DIR)+IEdriverpath);
 		driver=new ChromeDriver();
 	}

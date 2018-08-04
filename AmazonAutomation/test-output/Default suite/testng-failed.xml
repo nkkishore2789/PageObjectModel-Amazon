@@ -3,12 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Amazon.Testcases.SearchBook">
+      <class name="com.Amazon.Testcases.SearchBookTest">
         <methods>
           <include name="searchgivenbookTest"/>
           <include name="browsersetup"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.Amazon.Testcases.SearchBook -->
+      </class> <!-- com.Amazon.Testcases.SearchBookTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
