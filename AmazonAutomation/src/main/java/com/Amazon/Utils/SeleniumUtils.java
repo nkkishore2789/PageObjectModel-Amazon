@@ -66,7 +66,6 @@ public class SeleniumUtils {
 	
 	public static void selectmethod(String element,String value,WebDriver driver) throws Exception{
 		locator=ReadTestDataproperty.getelementlocator(element);
-		System.out.println("locator for dropdown is: "+locator);
 		Select select=new Select(driver.findElement(locator));
 		select.selectByVisibleText(value);
 	}
@@ -75,7 +74,7 @@ public class SeleniumUtils {
 		public  static WebElement waitToElementDisplay(String identifier,WebDriver driver) throws Exception{
 			
 			locator=ReadTestDataproperty.getelementlocator(identifier);
-			System.out.println("searchbutton :"+locator);
+			
 			
 			Wait<WebDriver> wait=new FluentWait<WebDriver>(driver)
 					.ignoring(RuntimeException.class)
@@ -85,7 +84,6 @@ public class SeleniumUtils {
 			element=wait.until(new Function<WebDriver, WebElement>()
 			{
 				public WebElement apply(WebDriver driver){
-					System.out.println("locator: "+locator);
 					return fluentelement= driver.findElement(locator);
 					
 				}
@@ -98,7 +96,7 @@ public class SeleniumUtils {
 		
 		public static void clickbtnbyJavascript(String element,WebDriver driver) throws Exception{
 			
-			System.out.println("Entering into JS:");
+			
 			locator=ReadTestDataproperty.getelementlocator(element);
 			WebElement btn=driver.findElement(locator);
 			jse=((JavascriptExecutor)driver);

@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13531" started-at="2018-08-05T16:45:33Z" finished-at="2018-08-05T16:45:46Z">
+  <suite name="Default suite" duration-ms="14745" started-at="2018-08-05T17:18:17Z" finished-at="2018-08-05T17:18:32Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13531" started-at="2018-08-05T16:45:33Z" finished-at="2018-08-05T16:45:46Z">
+    <test name="Default test" duration-ms="14745" started-at="2018-08-05T17:18:17Z" finished-at="2018-08-05T17:18:32Z">
       <class name="com.Amazon.Testcases.SearchBookTest">
-        <test-method status="PASS" signature="browsersetup()[pri:0, instance:com.Amazon.Testcases.SearchBookTest@2a70a3d8]" name="browsersetup" is-config="true" duration-ms="2957" started-at="2018-08-05T16:45:33Z" finished-at="2018-08-05T16:45:36Z">
+        <test-method status="PASS" signature="browsersetup()[pri:0, instance:com.Amazon.Testcases.SearchBookTest@2a70a3d8]" name="browsersetup" is-config="true" duration-ms="3520" started-at="2018-08-05T17:18:17Z" finished-at="2018-08-05T17:18:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browsersetup -->
-        <test-method status="PASS" signature="searchgivenbookTest()[pri:0, instance:com.Amazon.Testcases.SearchBookTest@2a70a3d8]" name="searchgivenbookTest" duration-ms="8441" started-at="2018-08-05T16:45:36Z" finished-at="2018-08-05T16:45:44Z">
+        <test-method status="PASS" signature="searchgivenbookTest()[pri:0, instance:com.Amazon.Testcases.SearchBookTest@2a70a3d8]" name="searchgivenbookTest" duration-ms="9074" started-at="2018-08-05T17:18:21Z" finished-at="2018-08-05T17:18:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchgivenbookTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Amazon.Testcases.SearchBookTest@2a70a3d8]" name="tearDown" is-config="true" duration-ms="2095" started-at="2018-08-05T16:45:44Z" finished-at="2018-08-05T16:45:46Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Amazon.Testcases.SearchBookTest@2a70a3d8]" name="tearDown" is-config="true" duration-ms="2114" started-at="2018-08-05T17:18:30Z" finished-at="2018-08-05T17:18:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

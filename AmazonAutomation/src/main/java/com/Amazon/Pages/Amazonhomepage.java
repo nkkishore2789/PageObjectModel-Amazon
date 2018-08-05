@@ -65,12 +65,9 @@ public static WebElement element;
 		System.out.println("dropdown value is "+dropdown);
 		System.out.println("dropdownselector: "+dropdownselector);
 		
-		String dropdownvalue=getText(dropdownselector, driver);
 		
-		if(dropdownvalue.equals("Books")){
 		selectmethod(dropdown,dropdownselector,driver);
-		}else
-			System.out.println("Dropdown value is  :"+dropdownvalue);
+		
 }
 	
 	
