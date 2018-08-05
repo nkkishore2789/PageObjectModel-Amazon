@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Reader+ WebPortal Suite" configfailurepolicy="skip">
 
-<test name="Reader+ WebReader Test Cases" configfailurepolicy="skip">
+<listeners>
+	<listener class-name="com.Amazon.ExtentReport.Reports.ExtentReport" />
+</listeners>
+
+<test name="Amazon - Search Book and Get the Book Details" configfailurepolicy="skip">
 		<classes>
 			<class name="com.Amazon.Testcases.SearchBookTest" />
-			</classes>
+		</classes>
 	</test>
 </suite>
