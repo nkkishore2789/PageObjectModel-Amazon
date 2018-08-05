@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Reader+ WebPortal Suite" duration-ms="20473" started-at="2018-08-05T10:13:04Z" finished-at="2018-08-05T10:13:24Z">
+  <suite name="Default suite" duration-ms="11995" started-at="2018-08-05T14:39:36Z" finished-at="2018-08-05T14:39:48Z">
     <groups>
     </groups>
-    <test name="Amazon - Search Book and Get the Book Details" duration-ms="20473" started-at="2018-08-05T10:13:04Z" finished-at="2018-08-05T10:13:24Z">
+    <test name="Default test" duration-ms="11995" started-at="2018-08-05T14:39:36Z" finished-at="2018-08-05T14:39:48Z">
       <class name="com.Amazon.Testcases.SearchBookTest">
-        <test-method status="PASS" signature="browsersetup()[pri:0, instance:com.Amazon.Testcases.SearchBookTest@43bd930a]" name="browsersetup" is-config="true" duration-ms="5079" started-at="2018-08-05T10:13:04Z" finished-at="2018-08-05T10:13:09Z">
+        <test-method status="PASS" signature="browsersetup()[pri:0, instance:com.Amazon.Testcases.SearchBookTest@75881071]" name="browsersetup" is-config="true" duration-ms="2972" started-at="2018-08-05T14:39:36Z" finished-at="2018-08-05T14:39:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browsersetup -->
-        <test-method status="PASS" signature="searchgivenbookTest()[pri:0, instance:com.Amazon.Testcases.SearchBookTest@43bd930a]" name="searchgivenbookTest" duration-ms="15356" started-at="2018-08-05T10:13:09Z" finished-at="2018-08-05T10:13:24Z">
+        <test-method status="PASS" signature="searchgivenbookTest()[pri:0, instance:com.Amazon.Testcases.SearchBookTest@75881071]" name="searchgivenbookTest" duration-ms="8980" started-at="2018-08-05T14:39:39Z" finished-at="2018-08-05T14:39:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchgivenbookTest -->
       </class> <!-- com.Amazon.Testcases.SearchBookTest -->
-    </test> <!-- Amazon - Search Book and Get the Book Details -->
-  </suite> <!-- Reader+ WebPortal Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

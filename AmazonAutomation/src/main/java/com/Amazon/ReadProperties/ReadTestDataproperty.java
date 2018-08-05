@@ -18,6 +18,8 @@ public class ReadTestDataproperty {
 	public static String SearchKeyword=null;
 	public static String dropdownselector=null;
 	public static String Amazonurl=null;
+	public static String driverpath=null;
+	public static String firefoxprofile=null;
 	public static  String TEST_ROOT_DIR;
 	static FileInputStream fis=null;
 	
@@ -59,7 +61,8 @@ public class ReadTestDataproperty {
   			
   			Browser=prop.getProperty("IEBrowser");
   			
-  		}
+  		}else
+  			System.out.println("Invalid Browser: "+Browser);
           
           //Load BrowserDrivers
           if(prop.getProperty("chromedriver")!=null && !(prop.getProperty("chromedriver").equalsIgnoreCase(""))){
@@ -77,7 +80,28 @@ public class ReadTestDataproperty {
             	BrowserDriver=prop.getProperty("IEDriver");
     			
     		}
-		
+            else
+            	System.out.println("Invalid driver: "+BrowserDriver);
+            
+            
+            //Load BrowserDriverpath
+            if(prop.getProperty("chromedriverpath")!=null && !(prop.getProperty("chromedriverpath").equalsIgnoreCase(""))){
+      			
+            	driverpath=prop.getProperty("chromedriverpath");
+    			
+    		}
+              if(prop.getProperty("firefoxdriverpath")!=null && !(prop.getProperty("firefoxdriverpath").equalsIgnoreCase(""))){
+    			
+            	  driverpath=prop.getProperty("firefoxdriverpath");
+    			
+    		}
+              if(prop.getProperty("IEDriverpath")!=null && !(prop.getProperty("IEDriverpath").equalsIgnoreCase(""))){
+      			
+            	  driverpath=prop.getProperty("IEDriverpath");
+      			
+      		}
+              else
+            	  System.out.println("Invalid Driver Path: "+driverpath);
         //Load SearchKeyword
           
           if(prop.getProperty("searchkeyword")!=null && !(prop.getProperty("searchkeyword").equalsIgnoreCase(""))){
@@ -99,6 +123,12 @@ public class ReadTestDataproperty {
         	  
         	  System.out.println("Amazonurl setup:"+Amazonurl);
     	}
+          if(prop.getProperty("firefoxprofile")!=null && !(prop.getProperty("firefoxprofile").equalsIgnoreCase(""))){
+    			
+        	  firefoxprofile=prop.getProperty("firefoxprofile");
+        	  
+          }  
+          
 	
 	}
  

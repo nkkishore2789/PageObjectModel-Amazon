@@ -27,20 +27,10 @@ public class WebBase {
 	public  WebDriver driver;
 	public WebElement element;
 	public static String URL;
-	
 	public static String Browser;
-	public static String BrowserType;
 	
-	
-	private static String chromedriverpath="\\Driver\\ChromeDriver\\chromedriver.exe";
-	private static String Firefoxdriverpath="\\Driver\\Firefox\\geckodriver.exe";
-	private static String IEdriverpath="\\Driver\\InternetExplorer\\IEDriverServer.exe";
-	
-	 ReadTestDataproperty readtestdata=PageFactory.initElements(driver, ReadTestDataproperty.class);
-	 
-	 
-	 
-	 
+	ReadTestDataproperty readtestdata=PageFactory.initElements(driver, ReadTestDataproperty.class);
+
 	
 	/**
 	 * Set up the Brower and the Driver of the Broswer
@@ -48,15 +38,9 @@ public class WebBase {
 	 
 	 public  void BrowsersetUp(){
 		 ReadTestDataproperty.setupParam();
+		  Browser=ReadTestDataproperty.Browser;
 		 
-		 
-		 Browser=ReadTestDataproperty.Browser;
-		 BrowserType=ReadTestDataproperty.BrowserDriver;
-		 
-		 System.out.println("Browser from base class :"+Browser);
-		 System.out.println("BrowserType; "+ BrowserType);
-		 
-		 if(Browser !=null && !(Browser.equalsIgnoreCase(""))){
+		if(Browser !=null && !(Browser.equalsIgnoreCase(""))){
 			 
 			 if(Browser.equalsIgnoreCase("chrome")){
 				 
@@ -79,18 +63,18 @@ public class WebBase {
 	 
 	public  void setupChromeDriver(){
 		
-		String ChromeDriver = BrowserType;
-		System.setProperty(ChromeDriver, ReadTestDataproperty.TEST_ROOT_DIR+chromedriverpath);
+		
+		System.setProperty(ReadTestDataproperty.BrowserDriver, ReadTestDataproperty.TEST_ROOT_DIR+ReadTestDataproperty.driverpath);
 		driver=new ChromeDriver();
 		
 	}
 	
 	public  void setupFirefoxDriver(){
-		String FirefoxDriver = BrowserType;
-		System.setProperty(FirefoxDriver, ReadTestDataproperty.TEST_ROOT_DIR+Firefoxdriverpath);
+		
+		System.setProperty(ReadTestDataproperty.BrowserDriver, ReadTestDataproperty.TEST_ROOT_DIR+ReadTestDataproperty.driverpath);
 		
 		ProfilesIni profile=new ProfilesIni();
-		FirefoxProfile firefoxProfile = profile.getProfile("Kishore");
+		FirefoxProfile firefoxProfile = profile.getProfile(ReadTestDataproperty.firefoxprofile);
 		
 		firefoxProfile.setAcceptUntrustedCertificates(true);
 		firefoxProfile.setAssumeUntrustedCertificateIssuer(true);
@@ -105,9 +89,9 @@ public class WebBase {
 	}
 	
 	public  void setupIEDriver(){
-		String IEDriver = BrowserType;
 		
-		System.setProperty(IEDriver, System.getProperty(ReadTestDataproperty.TEST_ROOT_DIR)+IEdriverpath);
+		
+		System.setProperty(ReadTestDataproperty.BrowserDriver, System.getProperty(ReadTestDataproperty.TEST_ROOT_DIR)+ReadTestDataproperty.driverpath);
 		driver=new ChromeDriver();
 	}
 	
