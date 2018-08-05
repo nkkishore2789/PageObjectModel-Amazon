@@ -57,15 +57,19 @@ public static WebElement element;
 		System.out.println("dropdown value is "+dropdown);
 		System.out.println("dropdownselector: "+dropdownselector);
 		
-	selectmethod(dropdown,dropdownselector,driver);
+		String dropdownvalue=getText(dropdownselector, driver);
 		
+		if(dropdownvalue.equals("Books")){
+		selectmethod(dropdown,dropdownselector,driver);
+		}else
+			System.out.println("Dropdown value is  :"+dropdownvalue);
 }
 	
 	
 	public static void enterSearchKeyword() throws Exception{
 		
 		enterText(searchbox,SearchKeyword,driver);
-		//driver.findElement(By.id(searchbox)).sendKeys(SearchKeyword);
+		
 		
 	}
 	
@@ -84,8 +88,6 @@ public static WebElement element;
 	public static void getBooktitle() throws Exception{
 		
 		String Booktitle=getText(BootTitle, driver);
-		
-		//String Booktitle=driver.findElement(By.xpath(BootTitle)).getText();
 		System.out.println("Booktitle: "+Booktitle);
 	}
 	
