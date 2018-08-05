@@ -22,6 +22,17 @@ import org.testng.annotations.Test;
 
 import com.Amazon.ReadProperties.ReadTestDataproperty;
 
+
+
+/********
+ * Web Base class,this class get initiated for all test execution
+ * @author kishore
+ *
+ */
+
+
+
+
 public class WebBase {
 
 	public  WebDriver driver;
@@ -30,12 +41,7 @@ public class WebBase {
 	public static String Browser;
 	
 	ReadTestDataproperty readtestdata=PageFactory.initElements(driver, ReadTestDataproperty.class);
-
-	
-	/**
-	 * Set up the Brower and the Driver of the Broswer
-	 */
-	 
+ 
 	 public  void BrowsersetUp(){
 		 ReadTestDataproperty.setupParam();
 		  Browser=ReadTestDataproperty.Browser;

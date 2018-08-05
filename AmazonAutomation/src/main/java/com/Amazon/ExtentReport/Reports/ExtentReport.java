@@ -1,6 +1,9 @@
 package com.Amazon.ExtentReport.Reports;
 
-
+/*****
+ * Extent Reprot class to give overall status of Test execution
+ * 
+ */
 	
 
 	import java.io.File;

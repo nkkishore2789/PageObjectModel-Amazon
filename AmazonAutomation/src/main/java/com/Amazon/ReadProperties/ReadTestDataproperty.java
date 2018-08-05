@@ -8,7 +8,11 @@ import java.util.Properties;
 
 import org.openqa.selenium.By;
 
-
+/******
+ * @author kishore
+ * This class is to read properties of Test data for Test execution
+ *
+ */
 
 public class ReadTestDataproperty {
 	

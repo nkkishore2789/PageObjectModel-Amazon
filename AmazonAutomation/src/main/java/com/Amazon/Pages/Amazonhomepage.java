@@ -16,7 +16,15 @@ import com.Amazon.ReadProperties.ReadTestDataproperty;
 import com.Amazon.ReadProperties.ReadlocatorProperties;
 import com.Amazon.Utils.SeleniumUtils;
 
-
+/****
+ * 
+ * This is page class which contains the page objects
+ * extends the utils class to perform basic operation
+ * 
+ * 
+ * @author kishore
+ *
+ */
 
 public class Amazonhomepage extends SeleniumUtils {
 	

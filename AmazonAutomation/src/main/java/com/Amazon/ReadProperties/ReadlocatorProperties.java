@@ -1,6 +1,12 @@
 package com.Amazon.ReadProperties;
 
 import java.io.File;
+
+/***
+ * This class is to read property of web elements
+ * 
+ * 
+ */
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
