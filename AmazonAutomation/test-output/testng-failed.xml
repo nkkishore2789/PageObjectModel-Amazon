@@ -7,7 +7,6 @@
         <methods>
           <include name="searchgivenbookTest"/>
           <include name="browsersetup"/>
-          <include name="tearDown"/>
         </methods>
       </class> <!-- com.Amazon.Testcases.SearchBookTest -->
     </classes>

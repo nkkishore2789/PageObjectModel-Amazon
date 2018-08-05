@@ -26,7 +26,8 @@ public class Amazonhomepage extends SeleniumUtils {
 	}
 
 public static WebDriver driver;
-public static WebDriverWait wait;
+public  WebDriverWait wait;
+public static WebElement element;
 	
 	ReadlocatorProperties readlocator=PageFactory.initElements(driver, ReadlocatorProperties.class);
 	ReadTestDataproperty readtestdata=PageFactory.initElements(driver, ReadTestDataproperty.class);
@@ -51,11 +52,12 @@ public static WebDriverWait wait;
 		gotourl(url,driver);
 }
 	
-	public static void selectvalueasBook() throws Exception{
+	public  void selectvalueasBook() throws Exception{
 		
 		System.out.println("dropdown value is "+dropdown);
 		System.out.println("dropdownselector: "+dropdownselector);
-		selectmethod(dropdown,dropdownselector,driver);
+		
+	selectmethod(dropdown,dropdownselector,driver);
 		
 }
 	
@@ -72,8 +74,9 @@ public static WebDriverWait wait;
 		WebElement search=waitToElementDisplay(searchbutton,driver);
 		
 		if(search.isDisplayed()){
+			
 			search.click();
-		//clickbtnbyJavascript(searchbutton, driver);
+		
 		}
 		
 	}
