@@ -47,10 +47,10 @@ public class SearchBookTest extends WebBase {
 		
 	}
 	
-	/*@AfterMethod
+	@AfterMethod
 	public void tearDown(){
 		driver.close();
 		
-	}*/
+	}
 
 }
