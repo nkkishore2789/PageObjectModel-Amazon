@@ -1,4 +1,4 @@
-1. This Automation follows Page Object Model Design.
+1. This Automation Framework follows Page Object Model Design.
 2. As of now, the Test data and Web Locators are maintained in two different file.
 3. On each Test execution these two property files should read the property files.
 4. Applied Fluent wait for the element which takes huge time to visible in web page, to avoid selenium exception
